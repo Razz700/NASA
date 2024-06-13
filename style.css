@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+#current-image-container{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#current-image-container #title1,.title{
+    font-weight: 800;
+    font-size: xx-large;
+    padding: 10px 0px;
+}
+#current-image-container #title1{
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+#current-image-container div img{
+    display: block;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+#current-image-container #title12{
+    font-weight: 800;
+    padding: 10px;
+    font-size: x-large;
+}
+#current-image-container div p{
+    padding-left: 10px;
+}
+#search-form{
+    padding-bottom: 20px;
+}
+#search-form input{
+padding: 2px;
+}
+#search{
+    cursor: pointer;
+    padding:2px 8px;
+}
+#search-history{
+    padding-bottom: 20px;
+}
+#search-history>li{
+    list-style-type: none;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+#search-history>li:hover{
+    color:    #91acbf;
+}
