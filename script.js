@@ -31,7 +31,6 @@ function getCurrentImageOfTheDay(){
         <p>${data.explanation}</p>
         </div>`;
     let locStorage=JSON.parse(localStorage.getItem('searches'))??[];
-    console.log(locStorage)
     if (locStorage.length==0) {
         localStorage.setItem('searches',JSON.stringify(locStorage));
     }
@@ -60,7 +59,10 @@ function getImageOfTheDay(getdate,checkrender){
     });
 }
 function saveSearch(date1){
-    const searchdata=JSON.parse(localStorage.getItem('searches'));
+    let searchdata=JSON.parse(localStorage.getItem('searches'))??[];
+    if (searchdata.length==0) {
+        localStorage.setItem('searches',JSON.stringify(searchdata));
+    }
    searchdata.push(date1);
    localStorage.setItem('searches',JSON.stringify(searchdata));
 }
